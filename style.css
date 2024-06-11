@@ -1,5 +1,5 @@
 footer, header {
-  background-color: rgb(20, 160, 247);
+  background-color: rgb(91, 192, 255);
 }
 
 body {
@@ -9,9 +9,9 @@ body {
 
 .header-image {
   width: 90vw;
-  max-height: 500px;
+  max-height: 350px;
   object-fit: contain;
-  margin: 5px;
+  margin-top: 20px;
 }
 
 .image-container {
@@ -23,8 +23,25 @@ body {
 .image-text {
   position: absolute;
   bottom: 5px;
-  font-size: 75px;
+  font-size: 50px;
   width: 100%;
   font-weight: 100;
   margin: 0px;
+}
+
+.about-header {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 100;
+  margin: 10px;
+}
+
+.about-text {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: 100;
+}
+
+.about-link-container {
+  text-align: center;
 }
