@@ -1,3 +1,30 @@
 footer, header {
   background-color: rgb(20, 160, 247);
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-image {
+  width: 90vw;
+  max-height: 500px;
+  object-fit: contain;
+  margin: 5px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 5px;
+  font-size: 75px;
+  width: 100%;
+  font-weight: 100;
+  margin: 0px;
+}
