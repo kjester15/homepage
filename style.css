@@ -2,6 +2,14 @@ footer, header {
   background-color: rgb(91, 192, 255);
 }
 
+h1, h3, h5 {
+  font-family: 'Playfair Display', Times, serif;
+}
+
+div, p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -29,7 +37,7 @@ body {
   margin: 0px;
 }
 
-.about-header {
+h3 {
   font-size: 35px;
   text-align: center;
   font-weight: 100;
@@ -44,4 +52,47 @@ body {
 
 .about-link-container {
   text-align: center;
+}
+
+h5 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  max-width: 300px;
+  margin: 20px;
+  box-shadow: 1px 1px 10px rgb(152, 152, 152);
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+.project-links a {
+  margin: 5px;
+}
+
+.project-info p {
+  margin: 15px;
 }
