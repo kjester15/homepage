@@ -1,6 +1,13 @@
 footer, header {
-  background-color: rgb(91, 192, 255);
   width: 100vw;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: -webkit-linear-gradient(105deg, transparent 55%, #004E95 45%);
 }
 
 h1, h3, h5 {
@@ -17,10 +24,9 @@ body {
 }
 
 .header-image {
-  width: 90vw;
+  margin-top: 20px;
   max-height: 350px;
   object-fit: contain;
-  margin-top: 20px;
 }
 
 .image-container {
@@ -55,6 +61,13 @@ h3 {
   text-align: center;
 }
 
+.about-container {
+  max-width: 500px;
+  /* margin: 20px; */
+  display: flex;
+  flex-direction: column;
+}
+
 .link-image {
   max-width: 30px;
   margin: 5px;
@@ -67,6 +80,10 @@ h5 {
   margin: 10px;
 }
 
+section {
+  margin: 20px;
+}
+
 .project-container {
   display: flex;
   align-items: center;
@@ -76,17 +93,28 @@ h5 {
 
 .project-card {
   max-width: 300px;
+  min-width: 250px;
   margin: 20px;
-  box-shadow: 1px 1px 10px rgb(152, 152, 152);
+  box-shadow: 1px 1px 10px rgb(62, 62, 62);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-image {
   width: 100%;
 }
 
+.project-info {
+  width: 100%;
+  max-height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
 .project-header {
   display: flex;
   justify-content: space-around;
+  margin: 5px;
 }
 
 .project-links {
@@ -95,7 +123,8 @@ h5 {
   align-content: space-between;
 }
 
-.project-links a {
+.project-link {
+  width: 25px;
   margin: 5px;
 }
 
@@ -105,12 +134,11 @@ h5 {
 
 footer {
   color: white;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  background-color: #004E95;
 }
 
 .contact-info {
@@ -137,4 +165,36 @@ footer {
 .contact-link-container {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 800px) {
+  .about-container, .header-image {
+    box-shadow: 1px 1px 10px rgb(62, 62, 62);
+  }
+
+  .about-container {
+    /* display: inline-block; */
+    background-color: white;
+    /* transform: translate(0%, 30%); */
+  }
+
+  .image-container {
+    position: relative;
+    z-index: 1;
+    /* transform: translate(-50%, 0%); */
+  }
+
+  @media (min-width: 1100px) {
+    .about-container, .header-image {
+      box-shadow: 1px 1px 10px rgb(62, 62, 62);
+    }
+  
+    .about-container {
+      background-color: white;
+    }
+  
+    .image-container {
+      position: relative;
+    }
+  }
 }
