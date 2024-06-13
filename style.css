@@ -7,7 +7,8 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-image: -webkit-linear-gradient(105deg, transparent 55%, #004E95 45%);
+  padding-top: 20px;
+  background-image: -webkit-linear-gradient(105deg, transparent 60%, #004E95 40%);
 }
 
 h1, h3, h5 {
@@ -24,7 +25,6 @@ body {
 }
 
 .header-image {
-  margin-top: 20px;
   max-height: 350px;
   object-fit: contain;
 }
@@ -38,7 +38,7 @@ body {
 .image-text {
   position: absolute;
   bottom: 5px;
-  font-size: 50px;
+  font-size: 55px;
   width: 100%;
   font-weight: 100;
   margin: 0px;
@@ -52,7 +52,7 @@ h3 {
 }
 
 .about-text {
-  font-size: 18px;
+  font-size: 20px;
   margin: 10px;
   font-weight: 100;
 }
@@ -63,7 +63,7 @@ h3 {
 
 .about-container {
   max-width: 500px;
-  /* margin: 20px; */
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -74,7 +74,7 @@ h3 {
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 26px;
   text-align: center;
   font-weight: 500;
   margin: 10px;
@@ -82,6 +82,10 @@ h5 {
 
 section {
   margin: 20px;
+}
+
+.my-work {
+  margin-left: 40px;
 }
 
 .project-container {
@@ -92,7 +96,7 @@ section {
 }
 
 .project-card {
-  max-width: 300px;
+  max-width: 400px;
   min-width: 250px;
   margin: 20px;
   box-shadow: 1px 1px 10px rgb(62, 62, 62);
@@ -124,12 +128,16 @@ section {
 }
 
 .project-link {
-  width: 25px;
+  width: 30px;
   margin: 5px;
 }
 
 .project-info p {
   margin: 15px;
+}
+
+.project-description {
+  font-size: 18px;
 }
 
 footer {
@@ -167,7 +175,7 @@ footer {
   justify-content: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 750px) {
   .about-container, .header-image {
     box-shadow: 1px 1px 10px rgb(62, 62, 62);
   }
@@ -176,6 +184,14 @@ footer {
     /* display: inline-block; */
     background-color: white;
     /* transform: translate(0%, 30%); */
+  }
+
+  .about-header {
+    text-align: left;
+  }
+
+  .about-text {
+    font-size: 22px;
   }
 
   .image-container {
@@ -188,9 +204,17 @@ footer {
     .about-container, .header-image {
       box-shadow: 1px 1px 10px rgb(62, 62, 62);
     }
+
+    header {
+      background-image: -webkit-linear-gradient(100deg, transparent 50%, #004E95 50%);
+    }
   
     .about-container {
       background-color: white;
+    }
+
+    .about-text {
+      font-size: 18px; 
     }
   
     .image-container {
